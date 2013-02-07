@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<task>
+    <name>Task 1</name>
+    <zone1>
+        <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</description>
+    </zone1>
+    <zone2>
+        <image></image>
+    </zone2>
+    <zone3>
+        <map>
+            <point>
+                <lat>55.770479</lat>
+                <long>37.574412</long>
+            </point>
+            <zoom>12</zoom>
+            <map_descr>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</map_descr>
+        </map>
+    </zone3>
+    <zone4>
+        <ident>TASK</ident>
+        <time>
+            <t1>
+                <priority>1</priority>
+                <start>1:00</start>
+                <end>2:00</end>
+            </t1>
+            <t2>
+                <priority>1</priority>
+                <start>1:00</start>
+                <end>2:00</end>
+            </t2>
+            <t2>
+                <priority>1</priority>
+                <start>1:00</start>
+                <end>2:00</end>
+            </t2>
+        </time>
+    </zone4>
+</task>
