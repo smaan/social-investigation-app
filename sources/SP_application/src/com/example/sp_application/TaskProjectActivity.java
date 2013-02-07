@@ -1,15 +1,38 @@
 package com.example.sp_application;
 
-import android.os.Bundle;
+
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.Spinner;
 
 public class TaskProjectActivity extends Activity {
+	
+	private String[] Time_vars = {"1:00 - 2:00", "2:00 - 3:00", "3:00 - 4:00", "4:00 - 5:00"};
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_task_project);
+		
+		this.setTitle("Task 1"); //Here will be current task name
+		
+		ImageView mimageView = (ImageView) findViewById(R.id.imageView1);
+		mimageView.setImageResource(R.drawable.logo);
+		
+		// Adapter
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, Time_vars);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        
+        Spinner spinner = (Spinner) findViewById(R.id.spinner1);
+        spinner.setAdapter(adapter);
+        
+        spinner.setPrompt("Выберите время");
+        
+        //spinner.setSelection(2);
 	}
 
 	@Override
