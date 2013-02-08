@@ -1,17 +1,17 @@
 package com.example.sp_application;
 
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
 
-public class TaskProjectActivity extends Activity {
+import com.google.android.maps.MapActivity;
+
+public class TaskProjectActivity extends MapActivity {
 	
 	private String[] Time_vars = {"1:00 - 2:00", "2:00 - 3:00", "3:00 - 4:00", "4:00 - 5:00"};
-	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -41,5 +41,10 @@ public class TaskProjectActivity extends Activity {
 		getMenuInflater().inflate(R.menu.activity_task_project, menu);
 		return true;
 	}
+	
+	@Override
+    protected boolean isRouteDisplayed() {
+        return false;
+    }
 
 }

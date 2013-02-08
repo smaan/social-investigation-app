@@ -3,16 +3,25 @@
     android:layout_height="fill_parent"
     >
 
-    <LinearLayout
+   <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/T_P_descr_point"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="0dp"
             android:text="@string/LorenIpsum"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -30,18 +39,46 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="@string/TBD_map"
+            android:layout_marginTop="20dp"
+            android:text="@string/T_P_Map_point"
             android:textAppearance="?android:attr/textAppearanceLarge" />
-        
-        <com.google.android.maps.MapView
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/mapview"
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp" >
+
+            <com.google.android.maps.MapView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mapview"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:layout_weight="2"
+                android:apiKey="0lES5RKZ2oqe0cvCKBKPETenUu0jNc2mxcVu12A"
+                android:clickable="false" >
+            </com.google.android.maps.MapView>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="@string/fish_map_description"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="1"
-            android:apiKey="0lES5RKZ2oqe0cvCKBKPETenUu0jNc2mxcVu12A"
-            android:clickable="false" />
+            android:layout_marginTop="20dp"
+            android:text="@string/T_P_time_choise_point"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <Spinner
             android:id="@+id/spinner1"
@@ -56,12 +93,14 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:text="@string/select_time_attention"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
 
             <Button
                 android:id="@+id/button1"
@@ -75,12 +114,11 @@
                 android:id="@+id/button2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
                 android:layout_weight="1"
                 android:text="@string/Execute" />
 
         </LinearLayout>
 
     </LinearLayout>
-
+    
 </ScrollView>
