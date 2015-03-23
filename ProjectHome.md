@@ -1,0 +1,1 @@
+Repository to manage activities on the applicaton. The application was requested by Moscow projects.
